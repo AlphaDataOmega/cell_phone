@@ -1,0 +1,1810 @@
+{
+  "repository": "AlphaDataOmega/cell_phone",
+  "baseCommit": "6b75da086ba2c004c3ff87da3944c56af67d57f3",
+  "sealedProtocolCommit": "c1a40ad827004d4e8e37a629a2904c8abe2c1a9b",
+  "protocolBlobSha": "ae37e2c1f67797988ceb1341c08417579c3858eb",
+  "startedAtUtc": "2026-09-19T08:27:12.887Z",
+  "finishedAtUtc": "2026-09-19T08:33:23.374Z",
+  "environment": {
+    "platform": "win32",
+    "arch": "x64",
+    "osRelease": "10.0.26200",
+    "node": "v22.18.0",
+    "v8": "12.4.254.21-node.27",
+    "execution": "Node vm; original Ω, polyfill, and field definitions; no DOM/canvas; one sealed run"
+  },
+  "sourceHashes": {
+    "omega.js": "52b28ed7f9f920beb2fc8ce9d99485a0763bc453",
+    "polyfill.js": "f8e5b499c57541727ca8509f1ca8fe9afcbac5ca",
+    "field.js": "9443ce6106c2ed84ca5b4d8e3ec49799105d08aa",
+    "index.html": "b28c8c5d51849bb2b3d1b84d87fac811bc3ec9e7"
+  },
+  "settings": {
+    "rounds": 16,
+    "perceptionFloor": 1e-7,
+    "noise": 1e-8,
+    "nullObservationsPerRound": 100,
+    "nullSeedFormula": "1000000 + 1000*k + i, i=0..99",
+    "pairsPerRound": 4950,
+    "percentile": "nearest rank",
+    "sd": "sample",
+    "envelope": "strictly greater than round-specific null-null p99",
+    "globalRule": "both lineages outside p99 at every k=8..16"
+  },
+  "verdict": "CLOSED NEGATIVE — no demonstrated post-perception lineage persistence",
+  "identityLossRound": 7,
+  "bothLineageNullLossRound": 9,
+  "rows": [
+    {
+      "k": 0,
+      "materialRatio": 1,
+      "belowPerception": false,
+      "nullNull": {
+        "count": 4950,
+        "mean": 0.000558197966088314,
+        "median": 0.0008071025020177647,
+        "sd": 0.0005872872430795018,
+        "p95": 0.002151115891368627,
+        "p99": 0.002151115891368627,
+        "max": 0.002151115891368627
+      },
+      "s1Null": {
+        "value": 0.9480487804878048,
+        "differenceFromMean": 0.9474905825217165,
+        "differenceFromP99": 0.9458976645964362,
+        "standardized": 1613.3341796315053,
+        "outside99": true
+      },
+      "s2Null": {
+        "value": 0.9474199070677427,
+        "differenceFromMean": 0.9468617091016543,
+        "differenceFromP99": 0.9452687911763741,
+        "standardized": 1612.263369006087,
+        "outside99": true
+      },
+      "lineageNullMean": {
+        "value": 0.9477343437777738,
+        "differenceFromMean": 0.9471761458116854,
+        "differenceFromP99": 0.9455832278864051,
+        "standardized": 1612.7987743187962,
+        "outside99": true
+      },
+      "s1S2": {
+        "value": 0.26315789473684215,
+        "differenceFromMean": 0.26259969677075384,
+        "differenceFromP99": 0.2610067788454735,
+        "standardized": 447.1401343468402,
+        "outside99": true
+      },
+      "s1Scramble": {
+        "value": 0,
+        "differenceFromMean": -0.000558197966088314,
+        "differenceFromP99": -0.002151115891368627,
+        "standardized": -0.95046839969032,
+        "outside99": false
+      },
+      "persistenceBoth": true,
+      "audits": {
+        "original": [
+          {
+            "pass": true,
+            "changed": 0,
+            "maxError": 5.960401328053422e-8,
+            "nonzeroIn": 65536,
+            "nonzeroOut": 65536,
+            "size": 65536
+          },
+          {
+            "pass": true,
+            "changed": 0,
+            "maxError": 5.959795434939963e-8,
+            "nonzeroIn": 65536,
+            "nonzeroOut": 65536,
+            "size": 65536
+          },
+          {
+            "pass": true,
+            "changed": 0,
+            "maxError": 5.818787487434085e-11,
+            "nonzeroIn": 65532,
+            "nonzeroOut": 65532,
+            "size": 65536
+          },
+          {
+            "pass": true,
+            "changed": 0,
+            "maxError": 5.959589222115369e-8,
+            "nonzeroIn": 65536,
+            "nonzeroOut": 65536,
+            "size": 65536
+          }
+        ],
+        "nullAllPass": true,
+        "nullFailures": []
+      },
+      "quantization": {
+        "s1Null": {
+          "shared": 213,
+          "total": 4100,
+          "mismatch": 3887,
+          "latticeStep": 0.00024390243902439024,
+          "derivedDistance": 0.9480487804878048
+        },
+        "s2Null": {
+          "shared": 215,
+          "total": 4089,
+          "mismatch": 3874,
+          "latticeStep": 0.00024455857177794083,
+          "derivedDistance": 0.9474199070677427
+        }
+      }
+    },
+    {
+      "k": 1,
+      "materialRatio": 0.1,
+      "belowPerception": false,
+      "nullNull": {
+        "count": 4950,
+        "mean": 0.0005581925442192316,
+        "median": 0.0008071025020177647,
+        "sd": 0.0005850363085124483,
+        "p95": 0.002151115891368627,
+        "p99": 0.002151115891368627,
+        "max": 0.002151115891368627
+      },
+      "s1Null": {
+        "value": 0.9456947162426614,
+        "differenceFromMean": 0.9451365236984423,
+        "differenceFromP99": 0.9435436003512928,
+        "standardized": 1615.5177207746447,
+        "outside99": true
+      },
+      "s2Null": {
+        "value": 0.9456947162426614,
+        "differenceFromMean": 0.9451365236984423,
+        "differenceFromP99": 0.9435436003512928,
+        "standardized": 1615.5177207746447,
+        "outside99": true
+      },
+      "lineageNullMean": {
+        "value": 0.9456947162426614,
+        "differenceFromMean": 0.9451365236984423,
+        "differenceFromP99": 0.9435436003512928,
+        "standardized": 1615.5177207746447,
+        "outside99": true
+      },
+      "s1S2": {
+        "value": 0.23505323505323505,
+        "differenceFromMean": 0.23449504250901582,
+        "differenceFromP99": 0.23290211916186643,
+        "standardized": 400.8213492001177,
+        "outside99": true
+      },
+      "s1Scramble": {
+        "value": 0.9459786821705426,
+        "differenceFromMean": 0.9454204896263234,
+        "differenceFromP99": 0.943827566279174,
+        "standardized": 1616.0031024915559,
+        "outside99": true
+      },
+      "persistenceBoth": true,
+      "audits": {
+        "original": [
+          {
+            "pass": true,
+            "changed": 0,
+            "maxError": 7.44965758525673e-9,
+            "nonzeroIn": 65536,
+            "nonzeroOut": 65536,
+            "size": 65536
+          },
+          {
+            "pass": true,
+            "changed": 0,
+            "maxError": 7.4502361224748626e-9,
+            "nonzeroIn": 65536,
+            "nonzeroOut": 65536,
+            "size": 65536
+          },
+          {
+            "pass": true,
+            "changed": 0,
+            "maxError": 5.8202482763891616e-11,
+            "nonzeroIn": 65531,
+            "nonzeroOut": 65531,
+            "size": 65536
+          },
+          {
+            "pass": true,
+            "changed": 0,
+            "maxError": 7.449154321159668e-9,
+            "nonzeroIn": 65536,
+            "nonzeroOut": 65536,
+            "size": 65536
+          }
+        ],
+        "nullAllPass": true,
+        "nullFailures": []
+      },
+      "quantization": {
+        "s1Null": {
+          "shared": 222,
+          "total": 4088,
+          "mismatch": 3866,
+          "latticeStep": 0.0002446183953033268,
+          "derivedDistance": 0.9456947162426614
+        },
+        "s2Null": {
+          "shared": 222,
+          "total": 4088,
+          "mismatch": 3866,
+          "latticeStep": 0.0002446183953033268,
+          "derivedDistance": 0.9456947162426614
+        }
+      }
+    },
+    {
+      "k": 2,
+      "materialRatio": 0.01,
+      "belowPerception": false,
+      "nullNull": {
+        "count": 4950,
+        "mean": 0.0005351649831643549,
+        "median": 0.0008071025020177647,
+        "sd": 0.0005638287093336697,
+        "p95": 0.0013451708366962745,
+        "p99": 0.002151115891368627,
+        "max": 0.002151115891368627
+      },
+      "s1Null": {
+        "value": 0.9438976377952756,
+        "differenceFromMean": 0.9433624728121113,
+        "differenceFromP99": 0.941746521903907,
+        "standardized": 1673.1366409613534,
+        "outside99": true
+      },
+      "s2Null": {
+        "value": 0.9444580978127304,
+        "differenceFromMean": 0.9439229328295661,
+        "differenceFromP99": 0.9423069819213618,
+        "standardized": 1674.130666288863,
+        "outside99": true
+      },
+      "lineageNullMean": {
+        "value": 0.9441778678040029,
+        "differenceFromMean": 0.9436427028208386,
+        "differenceFromP99": 0.9420267519126343,
+        "standardized": 1673.633653625108,
+        "outside99": true
+      },
+      "s1S2": {
+        "value": 0.22947658402203852,
+        "differenceFromMean": 0.22894141903887416,
+        "differenceFromP99": 0.2273254681306699,
+        "standardized": 406.04782134885636,
+        "outside99": true
+      },
+      "s1Scramble": {
+        "value": 0.9409035409035409,
+        "differenceFromMean": 0.9403683759203766,
+        "differenceFromP99": 0.9387524250121723,
+        "standardized": 1667.8263457561427,
+        "outside99": true
+      },
+      "persistenceBoth": true,
+      "audits": {
+        "original": [
+          {
+            "pass": true,
+            "changed": 0,
+            "maxError": 4.6565939645915044e-10,
+            "nonzeroIn": 65534,
+            "nonzeroOut": 65534,
+            "size": 65536
+          },
+          {
+            "pass": true,
+            "changed": 0,
+            "maxError": 4.6565011048438354e-10,
+            "nonzeroIn": 65536,
+            "nonzeroOut": 65536,
+            "size": 65536
+          },
+          {
+            "pass": true,
+            "changed": 0,
+            "maxError": 5.817425902977791e-11,
+            "nonzeroIn": 65532,
+            "nonzeroOut": 65532,
+            "size": 65536
+          },
+          {
+            "pass": true,
+            "changed": 0,
+            "maxError": 4.6564888923905645e-10,
+            "nonzeroIn": 65536,
+            "nonzeroOut": 65536,
+            "size": 65536
+          }
+        ],
+        "nullAllPass": true,
+        "nullFailures": []
+      },
+      "quantization": {
+        "s1Null": {
+          "shared": 228,
+          "total": 4064,
+          "mismatch": 3836,
+          "latticeStep": 0.00024606299212598425,
+          "derivedDistance": 0.9438976377952756
+        },
+        "s2Null": {
+          "shared": 226,
+          "total": 4069,
+          "mismatch": 3843,
+          "latticeStep": 0.0002457606291472106,
+          "derivedDistance": 0.9444580978127304
+        }
+      }
+    },
+    {
+      "k": 3,
+      "materialRatio": 0.001,
+      "belowPerception": false,
+      "nullNull": {
+        "count": 4950,
+        "mean": 0.0005307619920827933,
+        "median": 0.0008071025020177647,
+        "sd": 0.000563672216305105,
+        "p95": 0.0013451708366962745,
+        "p99": 0.002151115891368627,
+        "max": 0.002151115891368627
+      },
+      "s1Null": {
+        "value": 0.9332674246169056,
+        "differenceFromMean": 0.9327366626248228,
+        "differenceFromP99": 0.931116308725537,
+        "standardized": 1654.7501112241273,
+        "outside99": true
+      },
+      "s2Null": {
+        "value": 0.9308892742135249,
+        "differenceFromMean": 0.9303585122214421,
+        "differenceFromP99": 0.9287381583221562,
+        "standardized": 1650.5310804921007,
+        "outside99": true
+      },
+      "lineageNullMean": {
+        "value": 0.9320783494152152,
+        "differenceFromMean": 0.9315475874231324,
+        "differenceFromP99": 0.9299272335238465,
+        "standardized": 1652.6405958581138,
+        "outside99": true
+      },
+      "s1S2": {
+        "value": 0.24082191780821915,
+        "differenceFromMean": 0.24029115581613636,
+        "differenceFromP99": 0.23867080191685053,
+        "standardized": 426.29590188293287,
+        "outside99": true
+      },
+      "s1Scramble": {
+        "value": 0.9396338446313706,
+        "differenceFromMean": 0.9391030826392878,
+        "differenceFromP99": 0.9374827287400019,
+        "standardized": 1666.0446540990574,
+        "outside99": true
+      },
+      "persistenceBoth": true,
+      "audits": {
+        "original": [
+          {
+            "pass": true,
+            "changed": 0,
+            "maxError": 1.164117608733195e-10,
+            "nonzeroIn": 65532,
+            "nonzeroOut": 65532,
+            "size": 65536
+          },
+          {
+            "pass": true,
+            "changed": 0,
+            "maxError": 1.1639749710953828e-10,
+            "nonzeroIn": 65532,
+            "nonzeroOut": 65532,
+            "size": 65536
+          },
+          {
+            "pass": true,
+            "changed": 0,
+            "maxError": 5.819399367772149e-11,
+            "nonzeroIn": 65531,
+            "nonzeroOut": 65531,
+            "size": 65536
+          },
+          {
+            "pass": true,
+            "changed": 0,
+            "maxError": 1.1635401886769814e-10,
+            "nonzeroIn": 65532,
+            "nonzeroOut": 65532,
+            "size": 65536
+          }
+        ],
+        "nullAllPass": true,
+        "nullFailures": []
+      },
+      "quantization": {
+        "s1Null": {
+          "shared": 270,
+          "total": 4046,
+          "mismatch": 3776,
+          "latticeStep": 0.00024715768660405336,
+          "derivedDistance": 0.9332674246169056
+        },
+        "s2Null": {
+          "shared": 279,
+          "total": 4037,
+          "mismatch": 3758,
+          "latticeStep": 0.00024770869457517957,
+          "derivedDistance": 0.9308892742135249
+        }
+      }
+    },
+    {
+      "k": 4,
+      "materialRatio": 0.00009999999999999999,
+      "belowPerception": false,
+      "nullNull": {
+        "count": 4950,
+        "mean": 0.0005593397615888965,
+        "median": 0.0008071025020177647,
+        "sd": 0.0005869860358060965,
+        "p95": 0.002151115891368627,
+        "p99": 0.002151115891368627,
+        "max": 0.002151115891368627
+      },
+      "s1Null": {
+        "value": 0.7123321730482347,
+        "differenceFromMean": 0.7117728332866458,
+        "differenceFromP99": 0.7101810571568661,
+        "standardized": 1212.5890393783932,
+        "outside99": true
+      },
+      "s2Null": {
+        "value": 0.7143213572854291,
+        "differenceFromMean": 0.7137620175238402,
+        "differenceFromP99": 0.7121702413940605,
+        "standardized": 1215.9778495303465,
+        "outside99": true
+      },
+      "lineageNullMean": {
+        "value": 0.7133267651668319,
+        "differenceFromMean": 0.712767425405243,
+        "differenceFromP99": 0.7111756492754633,
+        "standardized": 1214.2834444543698,
+        "outside99": true
+      },
+      "s1S2": {
+        "value": 0.08206207259337195,
+        "differenceFromMean": 0.08150273283178305,
+        "differenceFromP99": 0.07991095670200332,
+        "standardized": 138.849525985498,
+        "outside99": true
+      },
+      "s1Scramble": {
+        "value": 0.9144898965007393,
+        "differenceFromMean": 0.9139305567391504,
+        "differenceFromP99": 0.9123387806093707,
+        "standardized": 1556.988584036871,
+        "outside99": true
+      },
+      "persistenceBoth": true,
+      "audits": {
+        "original": [
+          {
+            "pass": true,
+            "changed": 0,
+            "maxError": 5.811863794044636e-11,
+            "nonzeroIn": 65531,
+            "nonzeroOut": 65531,
+            "size": 65536
+          },
+          {
+            "pass": true,
+            "changed": 0,
+            "maxError": 5.818468862099635e-11,
+            "nonzeroIn": 65530,
+            "nonzeroOut": 65530,
+            "size": 65536
+          },
+          {
+            "pass": true,
+            "changed": 0,
+            "maxError": 5.8164955274095376e-11,
+            "nonzeroIn": 65532,
+            "nonzeroOut": 65532,
+            "size": 65536
+          },
+          {
+            "pass": true,
+            "changed": 0,
+            "maxError": 5.818657361489343e-11,
+            "nonzeroIn": 65521,
+            "nonzeroOut": 65521,
+            "size": 65536
+          }
+        ],
+        "nullAllPass": true,
+        "nullFailures": []
+      },
+      "quantization": {
+        "s1Null": {
+          "shared": 1157,
+          "total": 4022,
+          "mismatch": 2865,
+          "latticeStep": 0.0002486325211337643,
+          "derivedDistance": 0.7123321730482347
+        },
+        "s2Null": {
+          "shared": 1145,
+          "total": 4008,
+          "mismatch": 2863,
+          "latticeStep": 0.000249500998003992,
+          "derivedDistance": 0.7143213572854291
+        }
+      }
+    },
+    {
+      "k": 5,
+      "materialRatio": 0.000009999999999999999,
+      "belowPerception": false,
+      "nullNull": {
+        "count": 4950,
+        "mean": 0.0005325557577976651,
+        "median": 0.0008071025020177647,
+        "sd": 0.0005636536559142268,
+        "p95": 0.0013451708366962745,
+        "p99": 0.002151115891368627,
+        "max": 0.002151115891368627
+      },
+      "s1Null": {
+        "value": 0.4228702993092862,
+        "differenceFromMean": 0.42233774355148856,
+        "differenceFromP99": 0.4207191834179176,
+        "standardized": 749.285911871664,
+        "outside99": true
+      },
+      "s2Null": {
+        "value": 0.4243353783231084,
+        "differenceFromMean": 0.42380282256531077,
+        "differenceFromP99": 0.4221842624317398,
+        "standardized": 751.8851658611478,
+        "outside99": true
+      },
+      "lineageNullMean": {
+        "value": 0.4236028388161973,
+        "differenceFromMean": 0.42307028305839967,
+        "differenceFromP99": 0.4214517229248287,
+        "standardized": 750.585538866406,
+        "outside99": true
+      },
+      "s1S2": {
+        "value": 0.009959623149394359,
+        "differenceFromMean": 0.009427067391596693,
+        "differenceFromP99": 0.007808507258025732,
+        "standardized": 16.72492902810382,
+        "outside99": true
+      },
+      "s1Scramble": {
+        "value": 0.9146732429099876,
+        "differenceFromMean": 0.91414068715219,
+        "differenceFromP99": 0.912522127018619,
+        "standardized": 1621.812752495121,
+        "outside99": true
+      },
+      "persistenceBoth": true,
+      "audits": {
+        "original": [
+          {
+            "pass": true,
+            "changed": 0,
+            "maxError": 5.808532474449457e-11,
+            "nonzeroIn": 65530,
+            "nonzeroOut": 65530,
+            "size": 65536
+          },
+          {
+            "pass": true,
+            "changed": 0,
+            "maxError": 5.8200048730014386e-11,
+            "nonzeroIn": 65530,
+            "nonzeroOut": 65530,
+            "size": 65536
+          },
+          {
+            "pass": true,
+            "changed": 0,
+            "maxError": 5.818762355627727e-11,
+            "nonzeroIn": 65532,
+            "nonzeroOut": 65532,
+            "size": 65536
+          },
+          {
+            "pass": true,
+            "changed": 0,
+            "maxError": 5.7367040805222924e-11,
+            "nonzeroIn": 65527,
+            "nonzeroOut": 65527,
+            "size": 65536
+          }
+        ],
+        "nullAllPass": true,
+        "nullFailures": []
+      },
+      "quantization": {
+        "s1Null": {
+          "shared": 2256,
+          "total": 3909,
+          "mismatch": 1653,
+          "latticeStep": 0.00025581990278843696,
+          "derivedDistance": 0.4228702993092862
+        },
+        "s2Null": {
+          "shared": 2252,
+          "total": 3912,
+          "mismatch": 1660,
+          "latticeStep": 0.0002556237218813906,
+          "derivedDistance": 0.4243353783231084
+        }
+      }
+    },
+    {
+      "k": 6,
+      "materialRatio": 0.000001,
+      "belowPerception": false,
+      "nullNull": {
+        "count": 4950,
+        "mean": 0.000550365628059324,
+        "median": 0.0008071025020177647,
+        "sd": 0.0005840544097847794,
+        "p95": 0.002151115891368627,
+        "p99": 0.002151115891368627,
+        "max": 0.002151115891368627
+      },
+      "s1Null": {
+        "value": 0.07529162248144217,
+        "differenceFromMean": 0.07474125685338284,
+        "differenceFromP99": 0.07314050659007354,
+        "standardized": 127.96968159340591,
+        "outside99": true
+      },
+      "s2Null": {
+        "value": 0.07918432203389836,
+        "differenceFromMean": 0.07863395640583903,
+        "differenceFromP99": 0.07703320614252973,
+        "standardized": 134.63464206154214,
+        "outside99": true
+      },
+      "lineageNullMean": {
+        "value": 0.07723797225767026,
+        "differenceFromMean": 0.07668760662961094,
+        "differenceFromP99": 0.07508685636630164,
+        "standardized": 131.30216182747404,
+        "outside99": true
+      },
+      "s1S2": {
+        "value": 0.00428609697294402,
+        "differenceFromMean": 0.0037357313448846963,
+        "differenceFromP99": 0.0021349810815753933,
+        "standardized": 6.396204330109057,
+        "outside99": true
+      },
+      "s1Scramble": {
+        "value": 0.9062957540263543,
+        "differenceFromMean": 0.905745388398295,
+        "differenceFromP99": 0.9041446381349857,
+        "standardized": 1550.7894011656495,
+        "outside99": true
+      },
+      "persistenceBoth": true,
+      "audits": {
+        "original": [
+          {
+            "pass": true,
+            "changed": 0,
+            "maxError": 5.81827296845111e-11,
+            "nonzeroIn": 65528,
+            "nonzeroOut": 65528,
+            "size": 65536
+          },
+          {
+            "pass": true,
+            "changed": 0,
+            "maxError": 5.808198605232462e-11,
+            "nonzeroIn": 65526,
+            "nonzeroOut": 65526,
+            "size": 65536
+          },
+          {
+            "pass": true,
+            "changed": 0,
+            "maxError": 5.814873148962674e-11,
+            "nonzeroIn": 65531,
+            "nonzeroOut": 65531,
+            "size": 65536
+          },
+          {
+            "pass": true,
+            "changed": 0,
+            "maxError": 5.762495688954594e-11,
+            "nonzeroIn": 65534,
+            "nonzeroOut": 65534,
+            "size": 65536
+          }
+        ],
+        "nullAllPass": true,
+        "nullFailures": []
+      },
+      "quantization": {
+        "s1Null": {
+          "shared": 3488,
+          "total": 3772,
+          "mismatch": 284,
+          "latticeStep": 0.0002651113467656416,
+          "derivedDistance": 0.07529162248144217
+        },
+        "s2Null": {
+          "shared": 3477,
+          "total": 3776,
+          "mismatch": 299,
+          "latticeStep": 0.00026483050847457627,
+          "derivedDistance": 0.07918432203389836
+        }
+      }
+    },
+    {
+      "k": 7,
+      "materialRatio": 1e-7,
+      "belowPerception": false,
+      "nullNull": {
+        "count": 4950,
+        "mean": 0.0005340234214915165,
+        "median": 0.0008071025020177647,
+        "sd": 0.0005637049775908774,
+        "p95": 0.0013451708366962745,
+        "p99": 0.002151115891368627,
+        "max": 0.002151115891368627
+      },
+      "s1Null": {
+        "value": 0.00725221595487513,
+        "differenceFromMean": 0.006718192533383613,
+        "differenceFromP99": 0.005101100063506503,
+        "standardized": 11.917923027920297,
+        "outside99": true
+      },
+      "s2Null": {
+        "value": 0.00886143931256711,
+        "differenceFromMean": 0.008327415891075593,
+        "differenceFromP99": 0.006710323421198483,
+        "standardized": 14.772649208571327,
+        "outside99": true
+      },
+      "lineageNullMean": {
+        "value": 0.00805682763372112,
+        "differenceFromMean": 0.007522804212229603,
+        "differenceFromP99": 0.005905711742352493,
+        "standardized": 13.345286118245811,
+        "outside99": true
+      },
+      "s1S2": {
+        "value": 0.0016133369185264979,
+        "differenceFromMean": 0.0010793134970349815,
+        "differenceFromP99": -0.0005377789728421289,
+        "standardized": 1.9146779608859856,
+        "outside99": false
+      },
+      "s1Scramble": {
+        "value": 0.9111761835041483,
+        "differenceFromMean": 0.9106421600826567,
+        "differenceFromP99": 0.9090250676127797,
+        "standardized": 1615.4587883443835,
+        "outside99": true
+      },
+      "persistenceBoth": true,
+      "audits": {
+        "original": [
+          {
+            "pass": true,
+            "changed": 0,
+            "maxError": 5.8182267814385624e-11,
+            "nonzeroIn": 65531,
+            "nonzeroOut": 65531,
+            "size": 65536
+          },
+          {
+            "pass": true,
+            "changed": 0,
+            "maxError": 5.8069862937312755e-11,
+            "nonzeroIn": 65531,
+            "nonzeroOut": 65531,
+            "size": 65536
+          },
+          {
+            "pass": true,
+            "changed": 0,
+            "maxError": 5.8147688487136806e-11,
+            "nonzeroIn": 65531,
+            "nonzeroOut": 65531,
+            "size": 65536
+          },
+          {
+            "pass": true,
+            "changed": 0,
+            "maxError": 5.540587303190514e-11,
+            "nonzeroIn": 65527,
+            "nonzeroOut": 65527,
+            "size": 65536
+          }
+        ],
+        "nullAllPass": true,
+        "nullFailures": []
+      },
+      "quantization": {
+        "s1Null": {
+          "shared": 3696,
+          "total": 3723,
+          "mismatch": 27,
+          "latticeStep": 0.00026860059092130003,
+          "derivedDistance": 0.00725221595487513
+        },
+        "s2Null": {
+          "shared": 3691,
+          "total": 3724,
+          "mismatch": 33,
+          "latticeStep": 0.0002685284640171858,
+          "derivedDistance": 0.00886143931256711
+        }
+      }
+    },
+    {
+      "k": 8,
+      "materialRatio": 1e-8,
+      "belowPerception": true,
+      "nullNull": {
+        "count": 4950,
+        "mean": 0.0005340287118442881,
+        "median": 0.0008071025020177647,
+        "sd": 0.0005668146745689861,
+        "p95": 0.0013451708366962745,
+        "p99": 0.002151115891368627,
+        "max": 0.002151115891368627
+      },
+      "s1Null": {
+        "value": 0.0029561945713517668,
+        "differenceFromMean": 0.0024221658595074786,
+        "differenceFromP99": 0.00080507867998314,
+        "standardized": 4.2732941968189655,
+        "outside99": true
+      },
+      "s2Null": {
+        "value": 0.0008071025020177647,
+        "differenceFromMean": 0.00027307379017347654,
+        "differenceFromP99": -0.0013440133893508621,
+        "standardized": 0.4817690903664866,
+        "outside99": false
+      },
+      "lineageNullMean": {
+        "value": 0.0018816485366847657,
+        "differenceFromMean": 0.0013476198248404776,
+        "differenceFromP99": -0.00026946735468386107,
+        "standardized": 2.377531643592726,
+        "outside99": false
+      },
+      "s1S2": {
+        "value": 0.002151115891368627,
+        "differenceFromMean": 0.0016170871795243387,
+        "differenceFromP99": 0,
+        "standardized": 2.852938097895921,
+        "outside99": false
+      },
+      "s1Scramble": {
+        "value": 0.931604938271605,
+        "differenceFromMean": 0.9310709095597607,
+        "differenceFromP99": 0.9294538223802363,
+        "standardized": 1642.6372698761904,
+        "outside99": true
+      },
+      "persistenceBoth": false,
+      "audits": {
+        "original": [
+          {
+            "pass": true,
+            "changed": 0,
+            "maxError": 5.8205990591600476e-11,
+            "nonzeroIn": 65532,
+            "nonzeroOut": 65532,
+            "size": 65536
+          },
+          {
+            "pass": true,
+            "changed": 0,
+            "maxError": 5.814502742132466e-11,
+            "nonzeroIn": 65531,
+            "nonzeroOut": 65531,
+            "size": 65536
+          },
+          {
+            "pass": true,
+            "changed": 0,
+            "maxError": 5.819302982199015e-11,
+            "nonzeroIn": 65531,
+            "nonzeroOut": 65531,
+            "size": 65536
+          },
+          {
+            "pass": true,
+            "changed": 0,
+            "maxError": 5.818008054492285e-11,
+            "nonzeroIn": 65531,
+            "nonzeroOut": 65531,
+            "size": 65536
+          }
+        ],
+        "nullAllPass": true,
+        "nullFailures": []
+      },
+      "quantization": {
+        "s1Null": {
+          "shared": 3710,
+          "total": 3721,
+          "mismatch": 11,
+          "latticeStep": 0.0002687449610319806,
+          "derivedDistance": 0.0029561945713517668
+        },
+        "s2Null": {
+          "shared": 3714,
+          "total": 3717,
+          "mismatch": 3,
+          "latticeStep": 0.0002690341673392521,
+          "derivedDistance": 0.0008071025020177647
+        }
+      }
+    },
+    {
+      "k": 9,
+      "materialRatio": 1e-9,
+      "belowPerception": true,
+      "nullNull": {
+        "count": 4950,
+        "mean": 0.0005286464501602123,
+        "median": 0.0008071025020177647,
+        "sd": 0.0005691808700027706,
+        "p95": 0.0013451708366962745,
+        "p99": 0.002151115891368627,
+        "max": 0.002151115891368627
+      },
+      "s1Null": {
+        "value": 0.0008071025020177647,
+        "differenceFromMean": 0.0002784560518575524,
+        "differenceFromP99": -0.0013440133893508621,
+        "standardized": 0.48922243619360734,
+        "outside99": false
+      },
+      "s2Null": {
+        "value": 0,
+        "differenceFromMean": -0.0005286464501602123,
+        "differenceFromP99": -0.002151115891368627,
+        "standardized": -0.9287846412646282,
+        "outside99": false
+      },
+      "lineageNullMean": {
+        "value": 0.00040355125100888234,
+        "differenceFromMean": -0.00012509519915132996,
+        "differenceFromP99": -0.0017475646403597445,
+        "standardized": -0.21978110253551042,
+        "outside99": false
+      },
+      "s1S2": {
+        "value": 0.0008071025020177647,
+        "differenceFromMean": 0.0002784560518575524,
+        "differenceFromP99": -0.0013440133893508621,
+        "standardized": 0.48922243619360734,
+        "outside99": false
+      },
+      "s1Scramble": {
+        "value": 0.9094911937377691,
+        "differenceFromMean": 0.9089625472876088,
+        "differenceFromP99": 0.9073400778464005,
+        "standardized": 1596.9660879206713,
+        "outside99": true
+      },
+      "persistenceBoth": false,
+      "audits": {
+        "original": [
+          {
+            "pass": true,
+            "changed": 0,
+            "maxError": 5.8188877110829096e-11,
+            "nonzeroIn": 65530,
+            "nonzeroOut": 65530,
+            "size": 65536
+          },
+          {
+            "pass": true,
+            "changed": 0,
+            "maxError": 5.817981773431624e-11,
+            "nonzeroIn": 65532,
+            "nonzeroOut": 65532,
+            "size": 65536
+          },
+          {
+            "pass": true,
+            "changed": 0,
+            "maxError": 5.8195032126562296e-11,
+            "nonzeroIn": 65532,
+            "nonzeroOut": 65532,
+            "size": 65536
+          },
+          {
+            "pass": true,
+            "changed": 0,
+            "maxError": 5.4471007782455616e-11,
+            "nonzeroIn": 65525,
+            "nonzeroOut": 65525,
+            "size": 65536
+          }
+        ],
+        "nullAllPass": true,
+        "nullFailures": []
+      },
+      "quantization": {
+        "s1Null": {
+          "shared": 3714,
+          "total": 3717,
+          "mismatch": 3,
+          "latticeStep": 0.0002690341673392521,
+          "derivedDistance": 0.0008071025020177647
+        },
+        "s2Null": {
+          "shared": 3717,
+          "total": 3717,
+          "mismatch": 0,
+          "latticeStep": 0.0002690341673392521,
+          "derivedDistance": 0
+        }
+      }
+    },
+    {
+      "k": 10,
+      "materialRatio": 1e-10,
+      "belowPerception": true,
+      "nullNull": {
+        "count": 4950,
+        "mean": 0.0005549439607577072,
+        "median": 0.0008071025020177647,
+        "sd": 0.0005999527924900268,
+        "p95": 0.002151115891368627,
+        "p99": 0.002151115891368627,
+        "max": 0.002151115891368627
+      },
+      "s1Null": {
+        "value": 0.0008071025020177647,
+        "differenceFromMean": 0.00025215854126005744,
+        "differenceFromP99": -0.0013440133893508621,
+        "standardized": 0.4202973040820527,
+        "outside99": false
+      },
+      "s2Null": {
+        "value": 0.0008071025020177647,
+        "differenceFromMean": 0.00025215854126005744,
+        "differenceFromP99": -0.0013440133893508621,
+        "standardized": 0.4202973040820527,
+        "outside99": false
+      },
+      "lineageNullMean": {
+        "value": 0.0008071025020177647,
+        "differenceFromMean": 0.00025215854126005744,
+        "differenceFromP99": -0.0013440133893508621,
+        "standardized": 0.4202973040820527,
+        "outside99": false
+      },
+      "s1S2": {
+        "value": 0,
+        "differenceFromMean": -0.0005549439607577072,
+        "differenceFromP99": -0.002151115891368627,
+        "standardized": -0.9249793778848563,
+        "outside99": false
+      },
+      "s1Scramble": {
+        "value": 0.9111493969972926,
+        "differenceFromMean": 0.9105944530365349,
+        "differenceFromP99": 0.908998281105924,
+        "standardized": 1517.7768391696784,
+        "outside99": true
+      },
+      "persistenceBoth": false,
+      "audits": {
+        "original": [
+          {
+            "pass": true,
+            "changed": 0,
+            "maxError": 5.819077663303529e-11,
+            "nonzeroIn": 65532,
+            "nonzeroOut": 65532,
+            "size": 65536
+          },
+          {
+            "pass": true,
+            "changed": 0,
+            "maxError": 5.8182121230251904e-11,
+            "nonzeroIn": 65531,
+            "nonzeroOut": 65531,
+            "size": 65536
+          },
+          {
+            "pass": true,
+            "changed": 0,
+            "maxError": 5.811958574998555e-11,
+            "nonzeroIn": 65532,
+            "nonzeroOut": 65532,
+            "size": 65536
+          },
+          {
+            "pass": true,
+            "changed": 0,
+            "maxError": 5.589755741608471e-11,
+            "nonzeroIn": 65528,
+            "nonzeroOut": 65528,
+            "size": 65536
+          }
+        ],
+        "nullAllPass": true,
+        "nullFailures": []
+      },
+      "quantization": {
+        "s1Null": {
+          "shared": 3714,
+          "total": 3717,
+          "mismatch": 3,
+          "latticeStep": 0.0002690341673392521,
+          "derivedDistance": 0.0008071025020177647
+        },
+        "s2Null": {
+          "shared": 3714,
+          "total": 3717,
+          "mismatch": 3,
+          "latticeStep": 0.0002690341673392521,
+          "derivedDistance": 0.0008071025020177647
+        }
+      }
+    },
+    {
+      "k": 11,
+      "materialRatio": 1e-11,
+      "belowPerception": true,
+      "nullNull": {
+        "count": 4950,
+        "mean": 0.0005581979660883176,
+        "median": 0.0008071025020177647,
+        "sd": 0.0005872872430795008,
+        "p95": 0.002151115891368627,
+        "p99": 0.002151115891368627,
+        "max": 0.002151115891368627
+      },
+      "s1Null": {
+        "value": 0.0008071025020177647,
+        "differenceFromMean": 0.0002489045359294471,
+        "differenceFromP99": -0.0013440133893508621,
+        "standardized": 0.423820777417692,
+        "outside99": false
+      },
+      "s2Null": {
+        "value": 0,
+        "differenceFromMean": -0.0005581979660883176,
+        "differenceFromP99": -0.002151115891368627,
+        "standardized": -0.9504683996903277,
+        "outside99": false
+      },
+      "lineageNullMean": {
+        "value": 0.00040355125100888234,
+        "differenceFromMean": -0.00015464671507943526,
+        "differenceFromP99": -0.0017475646403597445,
+        "standardized": -0.26332381113631786,
+        "outside99": false
+      },
+      "s1S2": {
+        "value": 0.0008071025020177647,
+        "differenceFromMean": 0.0002489045359294471,
+        "differenceFromP99": -0.0013440133893508621,
+        "standardized": 0.423820777417692,
+        "outside99": false
+      },
+      "s1Scramble": {
+        "value": 0.9082636497786523,
+        "differenceFromMean": 0.9077054518125639,
+        "differenceFromP99": 0.9061125338872836,
+        "standardized": 1545.590275472216,
+        "outside99": true
+      },
+      "persistenceBoth": false,
+      "audits": {
+        "original": [
+          {
+            "pass": true,
+            "changed": 0,
+            "maxError": 5.8143609718563916e-11,
+            "nonzeroIn": 65531,
+            "nonzeroOut": 65531,
+            "size": 65536
+          },
+          {
+            "pass": true,
+            "changed": 0,
+            "maxError": 5.819141631231706e-11,
+            "nonzeroIn": 65532,
+            "nonzeroOut": 65532,
+            "size": 65536
+          },
+          {
+            "pass": true,
+            "changed": 0,
+            "maxError": 5.820428015425316e-11,
+            "nonzeroIn": 65531,
+            "nonzeroOut": 65531,
+            "size": 65536
+          },
+          {
+            "pass": true,
+            "changed": 0,
+            "maxError": 5.69206858296728e-11,
+            "nonzeroIn": 65525,
+            "nonzeroOut": 65525,
+            "size": 65536
+          }
+        ],
+        "nullAllPass": true,
+        "nullFailures": []
+      },
+      "quantization": {
+        "s1Null": {
+          "shared": 3714,
+          "total": 3717,
+          "mismatch": 3,
+          "latticeStep": 0.0002690341673392521,
+          "derivedDistance": 0.0008071025020177647
+        },
+        "s2Null": {
+          "shared": 3715,
+          "total": 3715,
+          "mismatch": 0,
+          "latticeStep": 0.00026917900403768504,
+          "derivedDistance": 0
+        }
+      }
+    },
+    {
+      "k": 12,
+      "materialRatio": 1e-12,
+      "belowPerception": true,
+      "nullNull": {
+        "count": 4950,
+        "mean": 0.0005112682843755994,
+        "median": 0.0008071025020177647,
+        "sd": 0.0005399046765018866,
+        "p95": 0.0013451708366962745,
+        "p99": 0.002151115891368627,
+        "max": 0.002151115891368627
+      },
+      "s1Null": {
+        "value": 0.0008071025020177647,
+        "differenceFromMean": 0.0002958342176421653,
+        "differenceFromP99": -0.0013440133893508621,
+        "standardized": 0.5479378685121122,
+        "outside99": false
+      },
+      "s2Null": {
+        "value": 0.002151115891368627,
+        "differenceFromMean": 0.0016398476069930273,
+        "differenceFromP99": 0,
+        "standardized": 3.0372909855454773,
+        "outside99": false
+      },
+      "lineageNullMean": {
+        "value": 0.0014791091966931957,
+        "differenceFromMean": 0.0009678409123175963,
+        "differenceFromP99": -0.0006720066946754311,
+        "standardized": 1.7926144270287947,
+        "outside99": false
+      },
+      "s1S2": {
+        "value": 0.0013451708366962745,
+        "differenceFromMean": 0.0008339025523206751,
+        "differenceFromP99": -0.0008059450546723523,
+        "standardized": 1.544536635103143,
+        "outside99": false
+      },
+      "s1Scramble": {
+        "value": 0.9191394658753709,
+        "differenceFromMean": 0.9186281975909952,
+        "differenceFromP99": 0.9169883499840022,
+        "standardized": 1701.4636797423354,
+        "outside99": true
+      },
+      "persistenceBoth": false,
+      "audits": {
+        "original": [
+          {
+            "pass": true,
+            "changed": 0,
+            "maxError": 5.8196743864952216e-11,
+            "nonzeroIn": 65532,
+            "nonzeroOut": 65532,
+            "size": 65536
+          },
+          {
+            "pass": true,
+            "changed": 0,
+            "maxError": 5.818188183841222e-11,
+            "nonzeroIn": 65531,
+            "nonzeroOut": 65531,
+            "size": 65536
+          },
+          {
+            "pass": true,
+            "changed": 0,
+            "maxError": 5.805539881297006e-11,
+            "nonzeroIn": 65532,
+            "nonzeroOut": 65532,
+            "size": 65536
+          },
+          {
+            "pass": true,
+            "changed": 0,
+            "maxError": 5.791809328144215e-11,
+            "nonzeroIn": 65534,
+            "nonzeroOut": 65534,
+            "size": 65536
+          }
+        ],
+        "nullAllPass": true,
+        "nullFailures": []
+      },
+      "quantization": {
+        "s1Null": {
+          "shared": 3714,
+          "total": 3717,
+          "mismatch": 3,
+          "latticeStep": 0.0002690341673392521,
+          "derivedDistance": 0.0008071025020177647
+        },
+        "s2Null": {
+          "shared": 3711,
+          "total": 3719,
+          "mismatch": 8,
+          "latticeStep": 0.00026888948642108095,
+          "derivedDistance": 0.002151115891368627
+        }
+      }
+    },
+    {
+      "k": 13,
+      "materialRatio": 1e-13,
+      "belowPerception": true,
+      "nullNull": {
+        "count": 4950,
+        "mean": 0.000554936069024094,
+        "median": 0.0008071025020177647,
+        "sd": 0.0005881352734908857,
+        "p95": 0.002151115891368627,
+        "p99": 0.002151115891368627,
+        "max": 0.002151115891368627
+      },
+      "s1Null": {
+        "value": 0.0008071025020177647,
+        "differenceFromMean": 0.0002521664329936707,
+        "differenceFromP99": -0.0013440133893508621,
+        "standardized": 0.4287558396165105,
+        "outside99": false
+      },
+      "s2Null": {
+        "value": 0,
+        "differenceFromMean": -0.000554936069024094,
+        "differenceFromP99": -0.002151115891368627,
+        "standardized": -0.9435517542252867,
+        "outside99": false
+      },
+      "lineageNullMean": {
+        "value": 0.00040355125100888234,
+        "differenceFromMean": -0.00015138481801521162,
+        "differenceFromP99": -0.0017475646403597445,
+        "standardized": -0.25739795730438814,
+        "outside99": false
+      },
+      "s1S2": {
+        "value": 0.0008071025020177647,
+        "differenceFromMean": 0.0002521664329936707,
+        "differenceFromP99": -0.0013440133893508621,
+        "standardized": 0.4287558396165105,
+        "outside99": false
+      },
+      "s1Scramble": {
+        "value": 0.9134709931170109,
+        "differenceFromMean": 0.9129160570479867,
+        "differenceFromP99": 0.9113198772256422,
+        "standardized": 1552.2212290199154,
+        "outside99": true
+      },
+      "persistenceBoth": false,
+      "audits": {
+        "original": [
+          {
+            "pass": true,
+            "changed": 0,
+            "maxError": 5.816571963662698e-11,
+            "nonzeroIn": 65532,
+            "nonzeroOut": 65532,
+            "size": 65536
+          },
+          {
+            "pass": true,
+            "changed": 0,
+            "maxError": 5.8201496573595524e-11,
+            "nonzeroIn": 65531,
+            "nonzeroOut": 65531,
+            "size": 65536
+          },
+          {
+            "pass": true,
+            "changed": 0,
+            "maxError": 5.8206226730833643e-11,
+            "nonzeroIn": 65531,
+            "nonzeroOut": 65531,
+            "size": 65536
+          },
+          {
+            "pass": true,
+            "changed": 0,
+            "maxError": 5.774931574609177e-11,
+            "nonzeroIn": 65530,
+            "nonzeroOut": 65530,
+            "size": 65536
+          }
+        ],
+        "nullAllPass": true,
+        "nullFailures": []
+      },
+      "quantization": {
+        "s1Null": {
+          "shared": 3714,
+          "total": 3717,
+          "mismatch": 3,
+          "latticeStep": 0.0002690341673392521,
+          "derivedDistance": 0.0008071025020177647
+        },
+        "s2Null": {
+          "shared": 3717,
+          "total": 3717,
+          "mismatch": 0,
+          "latticeStep": 0.0002690341673392521,
+          "derivedDistance": 0
+        }
+      }
+    },
+    {
+      "k": 14,
+      "materialRatio": 1e-14,
+      "belowPerception": true,
+      "nullNull": {
+        "count": 4950,
+        "mean": 0.0005364760553392062,
+        "median": 0.0008071025020177647,
+        "sd": 0.0005650857975941027,
+        "p95": 0.0013451708366962745,
+        "p99": 0.002151115891368627,
+        "max": 0.002151115891368627
+      },
+      "s1Null": {
+        "value": 0.0008071025020177647,
+        "differenceFromMean": 0.00027062644667855845,
+        "differenceFromP99": -0.0013440133893508621,
+        "standardized": 0.47891213658310267,
+        "outside99": false
+      },
+      "s2Null": {
+        "value": 0.0008071025020177647,
+        "differenceFromMean": 0.00027062644667855845,
+        "differenceFromP99": -0.0013440133893508621,
+        "standardized": 0.47891213658310267,
+        "outside99": false
+      },
+      "lineageNullMean": {
+        "value": 0.0008071025020177647,
+        "differenceFromMean": 0.00027062644667855845,
+        "differenceFromP99": -0.0013440133893508621,
+        "standardized": 0.47891213658310267,
+        "outside99": false
+      },
+      "s1S2": {
+        "value": 0,
+        "differenceFromMean": -0.0005364760553392062,
+        "differenceFromP99": -0.002151115891368627,
+        "standardized": -0.9493709762717365,
+        "outside99": false
+      },
+      "s1Scramble": {
+        "value": 0.9071011673151751,
+        "differenceFromMean": 0.9065646912598359,
+        "differenceFromP99": 0.9049500514238065,
+        "standardized": 1604.2956576144832,
+        "outside99": true
+      },
+      "persistenceBoth": false,
+      "audits": {
+        "original": [
+          {
+            "pass": true,
+            "changed": 0,
+            "maxError": 5.819489291500335e-11,
+            "nonzeroIn": 65531,
+            "nonzeroOut": 65531,
+            "size": 65536
+          },
+          {
+            "pass": true,
+            "changed": 0,
+            "maxError": 5.813476913404947e-11,
+            "nonzeroIn": 65532,
+            "nonzeroOut": 65532,
+            "size": 65536
+          },
+          {
+            "pass": true,
+            "changed": 0,
+            "maxError": 5.807157142309616e-11,
+            "nonzeroIn": 65531,
+            "nonzeroOut": 65531,
+            "size": 65536
+          },
+          {
+            "pass": true,
+            "changed": 0,
+            "maxError": 5.447739264904938e-11,
+            "nonzeroIn": 65532,
+            "nonzeroOut": 65532,
+            "size": 65536
+          }
+        ],
+        "nullAllPass": true,
+        "nullFailures": []
+      },
+      "quantization": {
+        "s1Null": {
+          "shared": 3714,
+          "total": 3717,
+          "mismatch": 3,
+          "latticeStep": 0.0002690341673392521,
+          "derivedDistance": 0.0008071025020177647
+        },
+        "s2Null": {
+          "shared": 3714,
+          "total": 3717,
+          "mismatch": 3,
+          "latticeStep": 0.0002690341673392521,
+          "derivedDistance": 0.0008071025020177647
+        }
+      }
+    },
+    {
+      "k": 15,
+      "materialRatio": 1e-15,
+      "belowPerception": true,
+      "nullNull": {
+        "count": 4950,
+        "mean": 0.0005340334468797407,
+        "median": 0.0008071025020177647,
+        "sd": 0.0005714428670969071,
+        "p95": 0.002151115891368627,
+        "p99": 0.002151115891368627,
+        "max": 0.002151115891368627
+      },
+      "s1Null": {
+        "value": 0.0008071025020177647,
+        "differenceFromMean": 0.00027306905513802395,
+        "differenceFromP99": -0.0013440133893508621,
+        "standardized": 0.4778588916951448,
+        "outside99": false
+      },
+      "s2Null": {
+        "value": 0,
+        "differenceFromMean": -0.0005340334468797407,
+        "differenceFromP99": -0.002151115891368627,
+        "standardized": -0.93453515238152,
+        "outside99": false
+      },
+      "lineageNullMean": {
+        "value": 0.00040355125100888234,
+        "differenceFromMean": -0.0001304821958708584,
+        "differenceFromP99": -0.0017475646403597445,
+        "standardized": -0.2283381303431876,
+        "outside99": false
+      },
+      "s1S2": {
+        "value": 0.0008071025020177647,
+        "differenceFromMean": 0.00027306905513802395,
+        "differenceFromP99": -0.0013440133893508621,
+        "standardized": 0.4778588916951448,
+        "outside99": false
+      },
+      "s1Scramble": {
+        "value": 0.908284023668639,
+        "differenceFromMean": 0.9077499902217593,
+        "differenceFromP99": 0.9061329077772704,
+        "standardized": 1588.5227421481143,
+        "outside99": true
+      },
+      "persistenceBoth": false,
+      "audits": {
+        "original": [
+          {
+            "pass": true,
+            "changed": 0,
+            "maxError": 5.8169120778842065e-11,
+            "nonzeroIn": 65532,
+            "nonzeroOut": 65532,
+            "size": 65536
+          },
+          {
+            "pass": true,
+            "changed": 0,
+            "maxError": 5.8202456092518173e-11,
+            "nonzeroIn": 65531,
+            "nonzeroOut": 65531,
+            "size": 65536
+          },
+          {
+            "pass": true,
+            "changed": 0,
+            "maxError": 5.818903453698454e-11,
+            "nonzeroIn": 65532,
+            "nonzeroOut": 65532,
+            "size": 65536
+          },
+          {
+            "pass": true,
+            "changed": 0,
+            "maxError": 5.723083291997444e-11,
+            "nonzeroIn": 65526,
+            "nonzeroOut": 65526,
+            "size": 65536
+          }
+        ],
+        "nullAllPass": true,
+        "nullFailures": []
+      },
+      "quantization": {
+        "s1Null": {
+          "shared": 3714,
+          "total": 3717,
+          "mismatch": 3,
+          "latticeStep": 0.0002690341673392521,
+          "derivedDistance": 0.0008071025020177647
+        },
+        "s2Null": {
+          "shared": 3715,
+          "total": 3715,
+          "mismatch": 0,
+          "latticeStep": 0.00026917900403768504,
+          "derivedDistance": 0
+        }
+      }
+    },
+    {
+      "k": 16,
+      "materialRatio": 1e-16,
+      "belowPerception": true,
+      "nullNull": {
+        "count": 4950,
+        "mean": 0.0005567300685667118,
+        "median": 0.0008071025020177647,
+        "sd": 0.0005876711903865783,
+        "p95": 0.002151115891368627,
+        "p99": 0.002151115891368627,
+        "max": 0.002151115891368627
+      },
+      "s1Null": {
+        "value": 0.0008071025020177647,
+        "differenceFromMean": 0.00025037243345105284,
+        "differenceFromP99": -0.0013440133893508621,
+        "standardized": 0.4260417007788903,
+        "outside99": false
+      },
+      "s2Null": {
+        "value": 0.0008071025020177647,
+        "differenceFromMean": 0.00025037243345105284,
+        "differenceFromP99": -0.0013440133893508621,
+        "standardized": 0.4260417007788903,
+        "outside99": false
+      },
+      "lineageNullMean": {
+        "value": 0.0008071025020177647,
+        "differenceFromMean": 0.00025037243345105284,
+        "differenceFromP99": -0.0013440133893508621,
+        "standardized": 0.4260417007788903,
+        "outside99": false
+      },
+      "s1S2": {
+        "value": 0,
+        "differenceFromMean": -0.0005567300685667118,
+        "differenceFromP99": -0.002151115891368627,
+        "standardized": -0.9473496024205085,
+        "outside99": false
+      },
+      "s1Scramble": {
+        "value": 0.914002478314746,
+        "differenceFromMean": 0.9134457482461793,
+        "differenceFromP99": 0.9118513624233774,
+        "standardized": 1554.348355319753,
+        "outside99": true
+      },
+      "persistenceBoth": false,
+      "audits": {
+        "original": [
+          {
+            "pass": true,
+            "changed": 0,
+            "maxError": 5.81543142634533e-11,
+            "nonzeroIn": 65530,
+            "nonzeroOut": 65530,
+            "size": 65536
+          },
+          {
+            "pass": true,
+            "changed": 0,
+            "maxError": 5.819080980962177e-11,
+            "nonzeroIn": 65532,
+            "nonzeroOut": 65532,
+            "size": 65536
+          },
+          {
+            "pass": true,
+            "changed": 0,
+            "maxError": 5.820409865880949e-11,
+            "nonzeroIn": 65531,
+            "nonzeroOut": 65531,
+            "size": 65536
+          },
+          {
+            "pass": true,
+            "changed": 0,
+            "maxError": 5.619754553203016e-11,
+            "nonzeroIn": 65531,
+            "nonzeroOut": 65531,
+            "size": 65536
+          }
+        ],
+        "nullAllPass": true,
+        "nullFailures": []
+      },
+      "quantization": {
+        "s1Null": {
+          "shared": 3714,
+          "total": 3717,
+          "mismatch": 3,
+          "latticeStep": 0.0002690341673392521,
+          "derivedDistance": 0.0008071025020177647
+        },
+        "s2Null": {
+          "shared": 3714,
+          "total": 3717,
+          "mismatch": 3,
+          "latticeStep": 0.0002690341673392521,
+          "derivedDistance": 0.0008071025020177647
+        }
+      }
+    }
+  ],
+  "rawArtifact": "RUN2-RAW.json.gz",
+  "console": [],
+  "errors": []
+}
